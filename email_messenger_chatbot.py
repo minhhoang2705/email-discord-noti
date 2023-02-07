@@ -37,8 +37,7 @@ def send_to_messenger(subject, body):
     access_token = "EAARxwKTEyHMBAAybuXEGJnZBWZAwb8SZAMcdls3y5CdzDaKtErSZC32L7JPyW8oZBFdETDiRxwnHGzb1bbSNSfeUNs6oAbTMaNTVCZBpDMBaZBgB4f4mAWZCbZC3WZB33GCb0wpY0drjDocRr6FSlhvuAIsO5tvsI6yOmvXqRueS0reZARl7dKGjQ3Nux1iXeQDKsTbSObZCZAFNbuwZDZD"
     graph = facebook.GraphAPI(
         access_token=access_token)
-
-    #Cannot send to Messenger
+    # cannot send 
     # Send the message to Messenger
     graph.put_object("me", message=subject + "\n" +
                      body, connection_name="message")
